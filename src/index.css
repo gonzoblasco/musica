@@ -1,13 +1,80 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+label {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+}
+
+legend {
+  display: inline-block;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  margin-bottom: 40px;
+  position: relative;
+  width: auto;
+  z-index: 0;
+}
+
+legend::before {
+  background-color: #EB6864;
+  content: '';
+  display: block;
+  height: 40px;
+  left: -30px;
+  position: absolute;
+  right: -30px;
+  transform: rotate(-1deg);
+  transition: transform .3s ease;
+  width: calc(120%);
+  z-index: -1;
+}
+
+legend:hover::before {
+  transform: rotate(2deg);
+}
+
+form.card {
+  border: none;
+}
+
+.letra {
+  white-space: pre-wrap;
+}
+
+.card img {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+h2 {
+  border-bottom: 3px solid #EB6864;
+  font-family: 'Work Sans', sans-serif;
+  margin-bottom: 2rem;
+  padding-bottom: 10px;
+}
+
+.card-body i {
+  font-size: 3rem;
+  margin-right: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #0084b4;
+}
+
+.fa-lastfm {
+  color: #d51007;
 }
